@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина  Мулина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2492487).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273)
 
 ---
 
