@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+.main-header {}
+
+nav {}
+
+.navigation-link {}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation-list-item {}
+
+.curent-page {}
+
+.navigation-link {}
+
+.user-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-navigation-list-item {}
+
+.visually-hidden {}
+
+.favorites-count {}
+
+main {}
+
+h1 {
+  margin: 0;
+}
+
+.hero {}
+
+h2 {
+  margin: 0;
+}
+
+.welcome-image {}
+
+.advantages {}
+
+.capitals {
+  margin: 0;
+}
+
+.description {
+  margin: 0;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-list-item {}
+
+.advantages-container {}
+
+.advantages-title {
+  margin: 0;
+}
+
+.advantages-text {
+  margin: 0;
+}
+
+.advantages-photo {}
+
+.invitation {}
+
+.invitation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.invitation-list-item {}
+
+.invitation-title {
+  margin: 0;
+}
+
+.invitation-text {
+  margin: 0;
+}
+
+.invitation-search {}
+
+.search-button {}
+
+.newsletter {}
+
+.newsletter-title {
+  margin: 0;
+}
+
+.newsletter-text {
+  margin: 0;
+}
+
+.newsletter-form {}
+
+.field {}
+
+.newsletter-button {}
+
+.main-footer {}
+
+.messengers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.messengers-list-item {}
+
+.button {}
+
+.contacts-phone {}
+
+.academy-logo {}
