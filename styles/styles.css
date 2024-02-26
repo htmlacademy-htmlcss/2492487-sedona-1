@@ -16,21 +16,28 @@
 
 body {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .main-header {}
 
 nav {}
 
-.navigation-link {}
+.navigation-logo {}
 
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.navigation-list-item {}
+.navigation-list-item {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
 
 .curent-page {}
 
@@ -44,9 +51,18 @@ nav {}
 
 .user-navigation-list-item {}
 
+.user-navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
 .visually-hidden {}
 
-.favorites-count {}
+.favorites-count {
+  font-size: 10px;
+  line-height: 10px;
+}
 
 main {}
 
@@ -66,10 +82,15 @@ h2 {
 
 .capitals {
   margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .description {
   margin: 0;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .advantages-list {
@@ -84,10 +105,15 @@ h2 {
 
 .advantages-title {
   margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .advantages-text {
   margin: 0;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .advantages-photo {}
@@ -104,31 +130,52 @@ h2 {
 
 .invitation-title {
   margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .invitation-text {
   margin: 0;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .invitation-search {}
 
-.search-button {}
+.search-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
 
 .newsletter {}
 
 .newsletter-title {
   margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .newsletter-text {
   margin: 0;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .newsletter-form {}
 
-.field {}
+.field {
+  font-size: 18px;
+  line-height: 24px;
+}
 
-.newsletter-button {}
+.newsletter-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
 
 .main-footer {}
 
@@ -142,6 +189,9 @@ h2 {
 
 .button {}
 
-.contacts-phone {}
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+}
 
 .academy-logo {}
