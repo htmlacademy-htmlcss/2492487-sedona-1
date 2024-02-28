@@ -22,9 +22,20 @@ body {
   line-height: 21px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .main-header {}
 
-nav {}
+.navigation {}
 
 .navigation-logo {}
 
@@ -33,6 +44,7 @@ nav {}
   padding: 0;
   list-style: none;
 }
+
 .navigation-list-item {
   font-size: 20px;
   line-height: 24px;
@@ -57,37 +69,27 @@ nav {}
   font-weight: 700;
 }
 
-.visually-hidden {}
-
 .favorites-count {
   font-size: 10px;
   line-height: 10px;
 }
 
-main {}
-
-h1 {
-  margin: 0;
-}
+.main {}
 
 .hero {}
-
-h2 {
-  margin: 0;
-}
 
 .welcome-image {}
 
 .advantages {}
 
-.capitals {
+.advantages-capitals {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.description {
+.advantages-description {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
@@ -120,6 +122,19 @@ h2 {
 
 .invitation {}
 
+.invitation-capitals {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.invitation-description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .invitation-list {
   margin: 0;
   padding: 0;
@@ -142,6 +157,19 @@ h2 {
 }
 
 .invitation-search {}
+
+.search-capitals {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
 
 .search-button {
   font-size: 20px;
@@ -166,7 +194,7 @@ h2 {
 
 .newsletter-form {}
 
-.field {
+.newsletter-field {
   font-size: 18px;
   line-height: 24px;
 }
@@ -187,11 +215,13 @@ h2 {
 
 .messengers-list-item {}
 
-.button {}
+.messenger-button {}
 
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
 }
+
+.academy-link {}
 
 .academy-logo {}
