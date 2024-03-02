@@ -20,6 +20,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  background-color: #f2f2f2;
+  color: #000000;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -46,14 +49,18 @@ body {
 }
 
 .navigation-list-item {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+
 }
 
 .curent-page {}
 
-.navigation-link {}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
 
 .user-navigation-list {
   margin: 0;
@@ -67,16 +74,24 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  background-color: #756157;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .favorites-count {
   font-size: 10px;
   line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
 }
 
 .main {}
 
-.hero {}
+.hero {
+  background-image: url("../images/index-background.jpg");
+}
 
 .welcome-image {}
 
@@ -87,12 +102,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .advantages-description {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .advantages-list {
@@ -110,12 +127,20 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .advantages-text {
   margin: 0;
-  font-size: 18px;
-  line-height: 21px;
+  color: #333333;
+}
+
+li:nth-child(1) .advantages-title, li:nth-child(1) .advantages-text {
+  color: #ffffff;
+}
+
+li:nth-child(5) .advantages-title, li:nth-child(5) .advantages-text {
+  color: #ffffff;
 }
 
 .advantages-photo {}
@@ -127,12 +152,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .invitation-description {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .invitation-list {
@@ -148,12 +175,12 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .invitation-text {
   margin: 0;
-  font-size: 18px;
-  line-height: 21px;
+  color: #333333;
 }
 
 .invitation-search {}
@@ -163,39 +190,49 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .search-description {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .search-button {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  background-color: #756157;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.newsletter {}
+.newsletter {
+  background-image: url("../images/newsletter-background.jpg");
+}
 
 .newsletter-title {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .newsletter-text {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
+  color: #ffffff;
 }
 
 .newsletter-form {}
 
 .newsletter-field {
-  font-size: 18px;
   line-height: 24px;
 }
 
@@ -203,6 +240,9 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .main-footer {}
@@ -220,6 +260,8 @@ body {
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .academy-link {}
