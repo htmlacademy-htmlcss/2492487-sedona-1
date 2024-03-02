@@ -91,6 +91,8 @@ body {
 
 .hero {
   background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .welcome-image {}
@@ -212,6 +214,8 @@ li:nth-child(5) .advantages-title, li:nth-child(5) .advantages-text {
 
 .newsletter {
   background-image: url("../images/newsletter-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .newsletter-title {
