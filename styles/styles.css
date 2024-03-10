@@ -30,6 +30,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -97,12 +98,11 @@ body {
 .hero {
   padding-top: 51px;
   padding-bottom: 82px;
-  background-color: #81b3d3;
+  background-color: #ddecf5;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
-  background-size: 1200px 57px, 100% auto;
+  background-size: 1200px 57px, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center top;
-
 }
 
 .welcome-image {
@@ -155,8 +155,8 @@ body {
 
 .advantages-container {
   padding-top: 102px;
+  padding-bottom: 102px;
   width: 400px;
-  height: 283px;
 }
 
 .advantages-title {
@@ -224,9 +224,8 @@ li:nth-child(5) .advantages-text {
 
 .invitation-list-item {
   padding-top: 183px;
+  padding-bottom: 81px;
   width: 400px;
-  height: 202px;
-
 }
 
 .invitation-list-item:nth-child(1),
@@ -244,8 +243,7 @@ li:nth-child(5) .advantages-text {
 }
 
 .invitation-text {
-  width: 230px;
-  margin: 0;
+  width: 180px; /* вопрос по ширине текста */
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -291,14 +289,17 @@ li:nth-child(5) .advantages-text {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .newsletter {
   padding-top: 96px;
   padding-bottom: 104px;
   background-image: url("../images/newsletter-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #ddecf5;
 }
 
 .newsletter-title {
@@ -320,7 +321,7 @@ li:nth-child(5) .advantages-text {
 }
 
 .newsletter-form {
-  height: 52px;
+  min-height: 52px;
 }
 
 .newsletter-field {
@@ -328,8 +329,8 @@ li:nth-child(5) .advantages-text {
   line-height: 24px;
   font-weight: 400;
   font-size: 18px;
-  width: 431px;
-  height: 52px;
+  min-width: 431px;
+  min-height: 52px;
   padding-block: 0;
   padding-inline: 0;
   padding-left: 20px;
@@ -343,12 +344,12 @@ li:nth-child(5) .advantages-text {
   background-color: #82B3D3;
   color: #ffffff;
   text-transform: uppercase;
-  width: 253px;
-  height: 52px;
+  min-width: 253px;
+  min-height: 52px;
 }
 
 .main-footer {
-  height: 120px;
+  min-height: 120px;
 }
 
 .messengers-list {
