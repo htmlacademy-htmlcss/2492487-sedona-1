@@ -76,11 +76,17 @@ body {
 
 .user-navigation-list-item {}
 
-.user-navigation-link {
+.user-navigation-link {}
+
+.user-navigation-button {
+  display: inline-block;
+  background-color: #756157;
+  padding: 8px 5px;
+  border-radius: 4px;
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  background-color: #756157;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -111,26 +117,25 @@ body {
   margin-right: auto;
 }
 
-.advantages {}
+.advantages {
+  padding-top: 69px;
+}
 
 .advantages-capitals {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 722px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-  margin-top: 69px;
+  width: 750px;
+  margin: 0 auto 25px;
 }
 
 .advantages-description {
-  margin: 0;
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  width: 750px;
 }
 
 .advantages-list {
@@ -160,15 +165,12 @@ body {
 }
 
 .advantages-title {
-  margin: 0;
-  margin-bottom: 62px;
+  margin: 0 auto 62px;
   width: 175px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .advantages-text {
@@ -193,24 +195,22 @@ li:nth-child(5) .advantages-text {
   display: block;
 }
 
-.invitation {}
+.invitation {
+  padding-top: 64px;
+}
 
 .invitation-capitals {
-  margin: 0;
+  margin: 0 auto 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 505px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 64px;
+  width: 600px;
 }
 
 .invitation-description {
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
+  width: 600px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -243,7 +243,7 @@ li:nth-child(5) .advantages-text {
 }
 
 .invitation-text {
-  width: 180px; /* вопрос по ширине текста */
+  width: 230px;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -255,33 +255,28 @@ li:nth-child(5) .advantages-text {
 }
 
 .search-capitals {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 600px;
 }
 
 .search-description {
-  margin: 0;
-  margin-bottom: 52px;
+  margin: 0 auto 52px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-}
-
-.button-container {
-  width: 376px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #756157;
-  border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 600px;
 }
 
 .search-button {
+  display: inline-block;
+  background-color: #756157;
+  padding: 8px 5px;
+  border-radius: 4px;
+  width: 367px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -289,8 +284,6 @@ li:nth-child(5) .advantages-text {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .newsletter {
