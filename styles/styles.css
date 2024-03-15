@@ -44,19 +44,35 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.main-header {}
+.main-header {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+}
 
-.navigation {}
+.navigation {
+  display: flex;
+  padding-left: 168px;
+}
 
-.navigation-logo {}
+.navigation-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .navigation-list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0 auto 0 0;
   padding: 0;
   list-style: none;
 }
 
-.navigation-list-item {}
+.navigation-list-item {
+  padding: 20px 16px;
+}
 
 .curent-page {}
 
@@ -69,12 +85,15 @@ body {
 }
 
 .user-navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.user-navigation-list-item {}
+.user-navigation-list-item {
+  padding: 14px 0 14px 20px;
+}
 
 .user-navigation-link {}
 
@@ -83,7 +102,7 @@ body {
   background-color: #756157;
   padding: 8px 5px;
   border-radius: 4px;
-  width: 160px;
+  width: 150px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -93,10 +112,14 @@ body {
 }
 
 .favorites-count {
+  display: inline-block;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
   background-color: #7db54f;
+  width: 11px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .main {}
@@ -139,6 +162,9 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -174,10 +200,8 @@ body {
 }
 
 .advantages-text {
-  margin: 0;
+  margin: 0 auto;
   color: #333333;
-  margin-left: auto;
-  margin-right: auto;
   width: 230px;
 }
 
@@ -217,6 +241,9 @@ li:nth-child(5) .advantages-text {
 }
 
 .invitation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -234,8 +261,8 @@ li:nth-child(5) .advantages-text {
 }
 
 .invitation-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 230px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -244,8 +271,7 @@ li:nth-child(5) .advantages-text {
 
 .invitation-text {
   width: 230px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   color: #333333;
 }
 
@@ -283,7 +309,6 @@ li:nth-child(5) .advantages-text {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .newsletter {
@@ -296,8 +321,8 @@ li:nth-child(5) .advantages-text {
 }
 
 .newsletter-title {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
+  width: 600px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -306,14 +331,18 @@ li:nth-child(5) .advantages-text {
 }
 
 .newsletter-text {
-  margin: 0;
-  margin-bottom: 54px;
+  margin: 0 auto 54px;
+  width: 600px;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
 }
 
 .newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 690px;
+  margin: 0 auto;
   min-height: 52px;
 }
 
@@ -322,7 +351,7 @@ li:nth-child(5) .advantages-text {
   line-height: 24px;
   font-weight: 400;
   font-size: 18px;
-  min-width: 431px;
+  min-width: 430px;
   min-height: 52px;
   padding-block: 0;
   padding-inline: 0;
@@ -337,7 +366,7 @@ li:nth-child(5) .advantages-text {
   background-color: #82B3D3;
   color: #ffffff;
   text-transform: uppercase;
-  min-width: 253px;
+  min-width: 236px;
   min-height: 52px;
 }
 
