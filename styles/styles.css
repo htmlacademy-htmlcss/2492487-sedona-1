@@ -86,6 +86,7 @@ body {
 
 .user-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -274,41 +275,29 @@ body {
   padding-bottom: 81px;
   width: 400px;
   background-color: rgba(130, 179, 211, 0.12);
-  position: relative;
 }
 
 .invitation-list-item:nth-child(2n) {
   background-color: #ffffff;
 }
 
-.back-house{
-  width: 75px;
-  height: 72px;
+.back-house {
   background-image: url(../images/house.svg);
   background-repeat: no-repeat;
-  position: absolute;
-  top: 81px;
-  left: 163px;
+  background-position: center 81px;
 }
 
-.back-burger{
-  width: 75px;
-  height: 72px;
+.back-burger {
   background-image: url(../images/burger.svg);
   background-repeat: no-repeat;
-  position: absolute;
-  top: 81px;
-  left: 163px;
+  background-position: center 82px;
+
 }
 
-.back-present{
-  width: 75px;
-  height: 76px;
+.back-present {
   background-image: url(../images/present.svg);
   background-repeat: no-repeat;
-  position: absolute;
-  top: 79px;
-  left: 168px;
+  background-position: center 79px;
 }
 
 .invitation-title {
@@ -463,16 +452,16 @@ body {
 }
 
 .vkontakte {
-background-image: url(../images/social-vk.svg);
+  background-image: url(../images/social-vk.svg);
 }
 
 .telegram {
-background-image: url(../images/social-telegram.svg);
+  background-image: url(../images/social-telegram.svg);
 }
 
 .youtube {
   background-image: url(../images/social-youtube.svg);
-  }
+}
 
 .contacts-phone {
   font-size: 40px;
@@ -501,7 +490,8 @@ background-image: url(../images/social-telegram.svg);
   background-color: #ddecf5;
   background-image: url(../images/background-filter.jpg);
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -556,6 +546,7 @@ background-image: url(../images/social-telegram.svg);
   font-weight: 400;
   line-height: 23px;
   margin: 0 0 16px;
+
 }
 
 .filter-category-item:last-child {
@@ -591,7 +582,8 @@ background-image: url(../images/social-telegram.svg);
 
 .hotel-sorting {
   display: flex;
-
+  margin-bottom: 40px;
+  align-items: center;
 }
 
 .hotel-number {
@@ -599,11 +591,19 @@ background-image: url(../images/social-telegram.svg);
   font-size: 30px;
   line-height: 36px;
   margin: 0 200px 0 0;
+  text-transform: uppercase;
 }
 
 .sorting-type {
   width: 292px;
+  min-height: 49px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
   margin: 0 70px 0 0;
+  padding-left: 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .style-list {
@@ -613,9 +613,31 @@ background-image: url(../images/social-telegram.svg);
   display: flex;
 }
 
-.style-item {}
+.style-item:not(:last-child) {
+  margin-right: 8px;
+}
 
-.plate-style {}
+.style-item-button {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.plate-style {
+  background-image: url(../images/plate.svg);
+  border-color: #000000;
+}
+
+.big-style{
+  background-image: url(../images/card.svg);
+}
+
+.list-style {
+  background-image: url(../images/list.svg);
+}
 
 .card-hotel-list {
   padding: 0;
@@ -628,6 +650,8 @@ background-image: url(../images/social-telegram.svg);
 
 .card-hotel-item {
   padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .card-hotel-image {
@@ -645,7 +669,7 @@ background-image: url(../images/social-telegram.svg);
   display: grid;
   grid-template-columns: 140px 140px;
   column-gap: 20px;
-  align-items:center;
+  align-items: center;
 }
 
 .hotel-link {
@@ -653,10 +677,13 @@ background-image: url(../images/social-telegram.svg);
   color: inherit;
 }
 
-.hotel {}
+.hotel {
+  margin: 0 0 16px;
+}
 
 .hotel-price {
   text-align: right;
+  margin: 0 0 16px;
 }
 
 .details-link {
@@ -681,6 +708,7 @@ background-image: url(../images/social-telegram.svg);
   width: 140px;
   padding: 8px;
   border: none;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -696,6 +724,7 @@ background-image: url(../images/social-telegram.svg);
   width: 140px;
   padding: 8px;
   border: none;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -708,6 +737,7 @@ background-image: url(../images/social-telegram.svg);
 .hotel-stars {}
 
 .rating {
+  min-height: 21px;
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
@@ -725,9 +755,7 @@ background-image: url(../images/social-telegram.svg);
   list-style: none;
 }
 
-.pagination-item {
-
-}
+.pagination-item {}
 
 
 
@@ -756,7 +784,7 @@ background-image: url(../images/social-telegram.svg);
   background-color: #ffffff;
 }
 
-.pagination-item .current-pagination ,
-.pagination-item .no-pagination  {
+.pagination-item .current-pagination,
+.pagination-item .no-pagination {
   color: #000000;
 }
