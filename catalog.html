@@ -51,7 +51,7 @@
             <h1 class="page-catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -61,47 +61,57 @@
             </ul>
           </header>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-list">
-              <legend class="filter-list-item">Инфраструктура:
+            <div class="filter-checks">
+              <fieldset class="filter-list">
+                <legend class="filter-list-item">Инфраструктура:</legend>
                 <ul class="filter-category-list">
                   <li class="filter-category-item">
-                    <input class="infrastructure" type="checkbox" name="swimmingpool" checked>Бассейн
+                    <input class="infrastructure visually-hidden" type="checkbox" name="swimmingpool" id="swimmingpool"
+                      checked>
+                    <label for="swimmingpool" class="label-checkbox">Бассейн</label>
                   </li>
                   <li class="filter-category-item">
-                    <input class="infrastructure" type="checkbox" name="parcking" checked>Парковка
+                    <input class="infrastructure visually-hidden" type="checkbox" name="parking" id="parking" checked>
+                    <label for="parking" class="label-checkbox">Парковка</label>
                   </li>
                   <li class="filter-category-item">
-                    <input class="infrastructure" type="checkbox" name="wifi">Wi-Fi
+                    <input class="infrastructure visually-hidden" type="checkbox" name="wifi" id="wifi">
+                    <label for="wifi" class="label-checkbox">Wi-Fi</label>
                   </li>
                 </ul>
-              </legend>
-            </fieldset>
-            <fieldset class="filter-list">
-              <legend class="filter-list-item">Тип Жилья:
+              </fieldset>
+              <fieldset class="filter-list">
+                <legend class="filter-list-item">Тип Жилья:</legend>
                 <ul class="filter-category-list">
                   <li class="filter-category-item">
-                    <input class="accomodation" type="radio" name="accomodation-type" value="hotel" checked>Гостиница
+                    <input class="accomodation visually-hidden" type="radio" name="accomodation-type" value="hotel"
+                      id="hotel" checked>
+                    <label class="label-radio" for="hotel">Гостиница</label>
                   </li>
                   <li class="filter-category-item">
-                    <input class="accomodation" type="radio" name="accomodation-type" value="hostel">Мотель
+                    <input class="accomodation visually-hidden" type="radio" name="accomodation-type" value="hostel"
+                      id="hostel">
+                    <label class="label-radio" for="hostel">Мотель</label>
                   </li>
                   <li class="filter-category-item">
-                    <input class="accomodation" type="radio" name="accomodation-type" value="apartments">Апартаменты
+                    <input class="accomodation visually-hidden" type="radio" name="accomodation-type" value="apartments"
+                      id="apartments">
+                    <label class="label-radio" for="apartments">Апартаменты</label>
                   </li>
                 </ul>
-              </legend>
-            </fieldset>
+              </fieldset>
+            </div>
+            <div class="filter-checks">
             <fieldset class="filter-list">
-              <legend class="filter-list-item">Стоимость, ₽:<br>
-                <input class="price-field" placeholder="от" type="text" name="price-from"><br>
-                <input class="price-field" placeholder="до" type="text" name="price-till"><br>
-                <-0----0----><br>
-              </legend>
+              <legend class="filter-list-item">Стоимость, ₽:</legend>
+              <input class="price-field price-field-from" placeholder="от" type="text" name="price-from" value="0">
+              <input class="price-field price-field-till" placeholder="до" type="text" name="price-till" value="9000">
             </fieldset>
-            <fieldset class="filter-buttons">
+            <fieldset class="filter-list filter-buttons">
               <button class="filter-button-admit" type="submit">Применить</button>
               <button class="filter-button-reset" type="reset">Сбросить</button>
             </fieldset>
+            </div>
           </form>
         </section>
         <section class="catalog">
@@ -115,12 +125,12 @@
               <li class="style-item">
                 <button class="style-item-button plate-style">
                   <span class="visually-hidden">Плитка</span>
-                  </button>
+                </button>
               </li>
               <li class="style-item">
                 <button class="style-item-button big-style">
                   <span class="visually-hidden">Крупно</span>
-                  </button>
+                </button>
               </li>
               <li class="style-item">
                 <button class="style-item-button list-style">
