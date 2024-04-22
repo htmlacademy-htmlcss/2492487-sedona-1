@@ -21,8 +21,8 @@
             <li class="navigation-list-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-list-item curent-page">
-              <a class="navigation-link">Гостиницы</a>
+            <li class="navigation-list-item ">
+              <a class="navigation-link curent-page">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-navigation-list">
@@ -102,15 +102,31 @@
               </fieldset>
             </div>
             <div class="filter-checks">
-            <fieldset class="filter-list">
-              <legend class="filter-list-item">Стоимость, ₽:</legend>
-              <input class="price-field price-field-from" placeholder="от" type="text" name="price-from" value="0">
-              <input class="price-field price-field-till" placeholder="до" type="text" name="price-till" value="9000">
-            </fieldset>
-            <fieldset class="filter-list filter-buttons">
-              <button class="filter-button-admit" type="submit">Применить</button>
-              <button class="filter-button-reset" type="reset">Сбросить</button>
-            </fieldset>
+              <fieldset class="filter-list">
+                <legend class="filter-list-item">Стоимость, ₽:</legend>
+                <div class="price-box">
+                  <label class="price-label" for="price-from">от</label>
+                  <input class="price-field price-field-from" placeholder="от" type="text" name="price-from"
+                    id="price-from" value="0">
+                  <label class="price-label price-label-till" for="price-till">до</label>
+                  <input class="price-field price-field-till" placeholder="до" type="text" name="price-till"
+                    id="price-till" value="9000">
+                </div>
+                <div class="range-price">
+                  <div class="scale"></div>
+                  <div class="range"></div>
+                  <button class="range-handle range-handle-min">
+                    <span class="visually-hidden">Минимальная цена</span>
+                  </button>
+                  <button class="range-handle range-handle-max">
+                    <span class="visually-hidden">Максимальная цена</span>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset class="filter-list filter-buttons">
+                <button class="filter-button-admit" type="submit">Применить</button>
+                <button class="filter-button-reset" type="reset">Сбросить</button>
+              </fieldset>
             </div>
           </form>
         </section>
@@ -143,7 +159,7 @@
             <li class="card-hotel-item">
               <a class="hotel-link" href="#">
                 <img class="card-hotel-image" src="images/sedona-hotel-1.jpg" alt="Фото Amara Resort & Spa"
-                  width="300px" height="212px">
+                  width="300px" height="213px">
                 <h3 class="hotel-name">Amara Resort & Spa</h3>
               </a>
               <div class="hotel-details">
@@ -151,7 +167,8 @@
                 <p class="hotel-price">От 4000 ₽</p>
                 <a href="#" class="details-link">Подробнее</a>
                 <button class="add-to-favourites" type="submit">В избранное</button>
-                <div class="hotel-stars"> 4 звезды
+                <div class="hotel-stars hotel-stars-four">
+                  <span class="visually-hidden">4 звезды</span>
                 </div>
                 <p class="rating">Рейтинг: 8,5</p>
               </div>
@@ -159,7 +176,7 @@
             <li class="card-hotel-item">
               <a class="hotel-link" href="#">
                 <img class="card-hotel-image" src="images/sedona-hotel-2.jpg" alt="Фото Villas at Poco Diablo"
-                  width="300px" height="212px">
+                  width="300px" height="213px">
                 <h3 class="hotel-name">Villas at Poco Diablo</h3>
               </a>
               <div class="hotel-details">
@@ -167,7 +184,8 @@
                 <p class="hotel-price">От 5000 ₽</p>
                 <a href="#" class="details-link">Подробнее</a>
                 <button class="added-to-favourites" type="submit">В избранном</button>
-                <div class="hotel-stars"> 4 звезды
+                <div class="hotel-stars hotel-stars-four">
+                  <span class="visually-hidden">4 звезды</span>
                 </div>
                 <p class="rating">Рейтинг: 9,2</p>
               </div>
@@ -175,7 +193,7 @@
             <li class="card-hotel-item">
               <a class="hotel-link" href="#">
                 <img class="card-hotel-image" src="images/sedona-hotel-3.jpg" alt="Фото Desert Quail Inn" width="300px"
-                  height="212px">
+                  height="213px">
                 <h3 class="hotel-name">Desert Quail Inn</h3>
               </a>
               <div class="hotel-details">
@@ -183,7 +201,8 @@
                 <p class="hotel-price">От 2500 ₽</p>
                 <a href="#" class="details-link">Подробнее</a>
                 <button class="add-to-favourites" type="submit">В избранное</button>
-                <div class="hotel-stars">3 звезды
+                <div class="hotel-stars hotel-stars-three">
+                  <span class="visually-hidden">3 звезды</span>
                 </div>
                 <p class="rating">Рейтинг: 6,9</p>
               </div>
@@ -191,7 +210,7 @@
             <li class="card-hotel-item">
               <a class="hotel-link" href="#">
                 <img class="card-hotel-image" src="images/sedona-hotel-4.jpg" alt="Фото GreenTree Inn" width="300px"
-                  height="212px">
+                  height="213px">
                 <h3 class="hotel-name">GreenTree Inn</h3>
               </a>
               <div class="hotel-details">
@@ -199,7 +218,8 @@
                 <p class="hotel-price">От 1500 ₽</p>
                 <a href="#" class="details-link">Подробнее</a>
                 <button class="add-to-favourites" type="submit">В избранное</button>
-                <div class="hotel-stars">2 звезды
+                <div class="hotel-stars hotel-stars-two">
+                  <span class="visually-hidden">2 звезды</span>
                 </div>
                 <p class="rating">Рейтинг: 5,0</p>
               </div>

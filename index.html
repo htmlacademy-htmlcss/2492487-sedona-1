@@ -16,8 +16,8 @@
             <img src="./images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона">
           </a>
           <ul class="navigation-list">
-            <li class="navigation-list-item curent-page">
-              <a class="navigation-link">Главная</a>
+            <li class="navigation-list-item ">
+              <a class="navigation-link curent-page">Главная</a>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -95,7 +95,7 @@
         </section>
         <section class="invitation">
           <h2 class="visually-hidden">Приглашение в город Седона</h2>
-          <p class="invitation-capitals">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
+          <p class="invitation-capitals">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="invitation-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="invitation-list">
             <li class="invitation-list-item back-house">
@@ -155,6 +155,30 @@
           </a>
         </section>
       </footer>
+    </div>
+    <div class="modal-box modal-closed1">
+      <div class="modal-window">
+        <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+        <button class="modal-close-button"> </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label for="date-from" class="date-from">Дата Заезда:</label>
+          <input id="date-from" class="input-date-from" name="date-from" type="date">
+          <span>Мы не можем отправить вас в прошлое.</span>
+          <label for="date-till" class="date-till">Дата Выезда:</label>
+          <input id="date-till" class="input-date-till" name="date-till" type="date">
+          <span>На эти даты есть свободные номера. Пока есть.</span>
+          <label for="adult-number" class="adult-number">Взрослые:</label>
+          <button class="adult-number-button number-minus">
+          <input id="adult-number" class="input-adult-number" name="adult-number" type="number">
+          <button class="adult-number-button number-plus"></button>
+          <button class="child-number-button number-minus">
+          <input id="child-number" class="input-child-number" name="child-number" type="number">
+          <div class="child-info"></div>
+          <button class="child-number-button number-plus"></button>
+          <button class="modal-form-button"></button>
+
+        </form>
+      </div>
     </div>
   </body>
 
