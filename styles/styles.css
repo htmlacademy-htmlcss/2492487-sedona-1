@@ -180,16 +180,16 @@ body {
 }
 
 .user-navigation-button:hover {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
 }
 
 .user-navigation-button:focus {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
   outline: none;
 }
 
 .user-navigation-button:active {
-  background-color: rgb(117, 97, 87);
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -271,20 +271,19 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  position: relative;
 }
 
-.advantages-title::after {
+.advantages-text::before {
   content: "";
   display: block;
   width: 60px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 86px;
-  left: 58px;
+  top: -33px;
+  left: 85px;
 }
 
-.advantages-item-spec .advantages-title::after {
+.advantages-item-spec .advantages-text::before {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -292,6 +291,7 @@ body {
   margin: 0 auto;
   color: #333333;
   width: 230px;
+  position: relative;
 }
 
 .advantages-item-spec .advantages-title,
@@ -357,7 +357,6 @@ body {
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
   background-position: center 82px;
-
 }
 
 .back-present {
@@ -418,16 +417,16 @@ body {
 }
 
 .search-button:hover {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
 }
 
 .search-button:focus {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
   outline: none;
 }
 
 .search-button:active {
-  background-color: rgb(117, 97, 87);
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -558,7 +557,7 @@ body {
   color: #83b3d3;
 }
 
-.messenger-button:hover .messenger-icon{
+.messenger-button:hover .messenger-icon {
   color: #68a2ca;
 }
 
@@ -571,7 +570,7 @@ body {
 }
 
 .messenger-button:active .messenger-icon {
-  color: rgba(104, 162, 202, 0.3)
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-phone {
@@ -580,7 +579,6 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-
 }
 
 .contacts-phone:hover {
@@ -666,13 +664,13 @@ body {
   content: "";
   width: 8px;
   height: 20px;
-  background: url("../images/arrow_breadcrumbs.svg") no-repeat center center;
+  background: url("../images/arrow-breadcrumbs.svg") no-repeat center center;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.breadcrumbs-item:last-child:after {
+.breadcrumbs-item:last-child::after {
   display: none;
 }
 
@@ -696,10 +694,9 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url("../images/home_link.svg");
+  background-image: url("../images/home-link.svg");
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 .breadcrumbs-link-home:hover {
@@ -753,7 +750,6 @@ body {
   font-weight: 400;
   line-height: 23px;
   margin: 0 0 16px;
-
 }
 
 .filter-category-item:last-child {
@@ -983,7 +979,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
   color: #ffffff;
   text-transform: uppercase;
   width: 191px;
@@ -995,21 +991,21 @@ body {
 }
 
 .filter-button-admit:hover {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .filter-button-admit:focus {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
   outline: none;
 }
 
 .filter-button-admit:active {
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-button-admit:disabled {
-  background-color: rgb(229, 229, 229);
+  background-color: #e5e5e5;
 }
 
 
@@ -1032,7 +1028,7 @@ body {
 }
 
 .filter-button-reset:focus {
-  outline: 3px solid rgb(131, 179, 211);
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
@@ -1053,14 +1049,19 @@ body {
   display: flex;
   margin-bottom: 38px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .hotel-number {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin: 0 200px 0 0;
+  margin: 0;
   text-transform: uppercase;
+}
+
+.sorting-params {
+  display: flex;
 }
 
 .sorting-type {
@@ -1070,12 +1071,13 @@ body {
   border-radius: 4px;
   margin: 0 70px 0 0;
   padding-left: 20px;
+  padding-right: 50px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
   appearance: none;
-  background: url("../images/select-arrow.svg") no-repeat 261px center;
+  background: url("../images/select-arrow.svg") no-repeat right+18px center;
 }
 
 .sorting-type:hover {
@@ -1205,11 +1207,13 @@ body {
 
 .hotel {
   margin: 0;
+  color: #333333;
 }
 
 .hotel-price {
   text-align: right;
   margin: 0;
+  color: #333333;
 }
 
 .details-link {
@@ -1230,16 +1234,16 @@ body {
 }
 
 .details-link:hover {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
 }
 
 .details-link:focus {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
   outline: none;
 }
 
 .details-link:active {
-  background-color: rgb(117, 97, 87);
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1475,7 +1479,7 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../images/icons_cross.svg") no-repeat center center;
+  background: url("../images/icons-cross.svg") no-repeat center center;
   position: absolute;
   top: 16px;
   left: 16px;
@@ -1491,8 +1495,12 @@ body {
 }
 
 .modal-close-button:active {
-  opacity: 0.3;
+  background-color: #e6e6e6;
   outline: none;
+}
+
+.modal-close-button:active + .modal-close-button::after {
+  opacity: 0.3;
 }
 
 .modal-form {
@@ -1636,6 +1644,7 @@ body {
   width: 40px;
   height: 48px;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .number-minus {
@@ -1650,10 +1659,11 @@ body {
   bottom: 0;
   left: 12px;
   margin: 0;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .number-minus:hover .number-minus-icon {
-  fill: #000000;
+  color: #000000;
   fill-opacity: 1;
 }
 
@@ -1662,7 +1672,7 @@ body {
 }
 
 .number-minus:focus .number-minus-icon {
-  fill: #000000;
+  color: #000000;
   fill-opacity: 1;
 }
 
@@ -1678,7 +1688,7 @@ body {
 }
 
 .number-minus:active .number-minus-icon {
-  fill: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
@@ -1694,10 +1704,11 @@ body {
   bottom: 0;
   left: 13px;
   margin: 0;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .number-plus:hover .number-plus-icon {
-  fill: #000000;
+  color: #000000;
   fill-opacity: 1;
 }
 
@@ -1706,7 +1717,7 @@ body {
 }
 
 .number-plus:focus .number-plus-icon {
-  fill: #000000;
+  color: #000000;
   fill-opacity: 1;
 }
 
@@ -1722,7 +1733,7 @@ body {
 }
 
 .number-plus:active .number-plus-icon {
-  fill: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
@@ -1829,6 +1840,7 @@ body {
   width: 40px;
   height: 48px;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .modal-form-button {
